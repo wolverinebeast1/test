@@ -1,1 +1,5 @@
-
+To fix xorg bug with 144 hz dont working properly
+Edit the file by: sudo nvim /etc/environment
+Then add this 2 lines:
+CLUTTER_DEFAULT_FPS=144   #Put your refresh rate
+__GL_SYNC_DISPLAY_DEVICE=HDMI-0 #Mine was HDMI-0
